@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    overflow-x: hidden;
+}
+
+
+/*layout*/
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10vw;
+}
+
+/*utilidades*/
+.hidden{
+    display: none;
+}
+
+
+/*padding*/
+/*margin*/
+
+.mt-20{
+    margin-top: 20px;
+}
+
+
+.mt-60{
+    margin-top: 60px;
+}
+
+/*width*/
+
+.mw-80{
+    max-width: 80%;
+}
+
+.mx-100{
+    max-width: 100%;
+}
+
+
+/*text colors*/
+
+.text-primary{
+    color: var(--primary-color);
+}
+
+a{
+    color: var(--primary-color);
+}
+
+/*Fonts*/
+
+:root{
+    --font-body: "Satoshi-Medium";
+    --font-title:"Satoshi-Black";
+
+    /*sizes*/
+    --size-1:12px;
+    --size-2:16px;
+    --size-3:18px;
+    --size-4:20px;
+    --size-5:24px;
+    --size-6:32px;
+    --size-7:40px;
+    --size-8:52px;
+    --size-9:64px;
+}
+
+.size-1{
+    font-size: var(--size-1);
+}
+.size-2{
+    font-size: var(--size-2);
+}
+
+.size-3{
+    font-size: var(--size-3);
+}
+
+.size-4{
+    font-size: var(--size-4);
+}
+
+.size-5{
+    font-size: var(--size-5);
+}
+
+.size-6{
+    font-size: var(--size-6);
+}
+
+.size-7{
+    font-size: var(--size-7);
+}
+
+.size-8{
+    font-size: var(--size-8);
+}
+
+.size-9{
+    font-size: var(--size-9);
+}
+
+
+
+.font-title{
+    font-family: var(--font-title);
+}
+
+
+/*colors*/
+
+:root{
+    --primary-color: "#85E25A";
+    --dark-color:"#0000";
+    --light-color:"#ffff";
+}
+
+
+body{
+    font-family: var(--font-body);
+
+}
+
+/*hero*/
+.antetitulo{
+    font-size: var(--size-5);
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.image-hero{
+
+
+    overflow-x: hidden;
+    bottom: 5vh;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+
+}
+
+.image-hero img{
+    max-height: 400px;
+}
