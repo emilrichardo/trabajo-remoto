@@ -7,15 +7,33 @@
 
 html,body{
     overflow-x: hidden;
+    height: 100%;
 }
 
 
 /*layout*/
 
 .container{
-    max-width: 540px;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 0 10vw;
+    padding: 0 24px;
+}
+
+
+
+@media (min-width:1024px) {
+    .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .col-main {
+        width: calc(100vw - 500px);
+        max-width: 600px;;
+    }
+    .col-main + section{
+        max-width: 500px;
+    }
 }
 
 /*utilidades*/
@@ -41,6 +59,10 @@ html,body{
 
 /*width*/
 
+.mx-25{
+    max-width: 25%;
+}
+
 .mw-80{
     max-width: 80%;
 }
@@ -51,7 +73,7 @@ html,body{
 
 /*heights*/
 .h-100{
-    height: 100vh;
+    min-height: 100%;
 }
 
 
@@ -63,6 +85,7 @@ html,body{
     --dark-color:#000;
     --light-color:#fff;
 }
+
 
 
 /*text colors*/
@@ -109,6 +132,9 @@ html,body{
     --size-9:64px;
 }
 
+
+
+
 .size-1{
     font-size: var(--size-1);
 }
@@ -144,6 +170,30 @@ html,body{
     font-size: var(--size-9);
 }
 
+@media (min-width:1024px) {
+    .lg-size-5{
+        font-size: var(--size-5);
+    }
+
+    .lg-size-6{
+        font-size: var(--size-6);
+    }
+
+    .lg-size-7{
+        font-size: var(--size-7);
+    }
+
+    .lg-size-8{
+        font-size: var(--size-8);
+    }
+
+    .lg-size-9{
+        font-size: var(--size-9);
+    }
+
+}
+
+
 
 
 .font-title{
@@ -176,12 +226,23 @@ body{
 }
 
 /*hero*/
+
+.hero{
+    position: relative;
+}
+
 .antetitulo{
-    font-size: var(--size-5);
     display: block;
     text-transform: uppercase;
     letter-spacing: 8px;
 }
+
+.title-image{
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 .image-hero{
 
@@ -196,6 +257,35 @@ body{
 
 .image-hero img{
     max-height: 400px;
+}
+
+@media (min-width:1440px) {
+    .hero{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+
+        flex-direction: column;
+    }
+    .hero .container{
+        max-width: 55%;
+        margin-left: 2vw;
+    }
+    .hero .image-hero{
+        position: absolute;
+        top: 0;
+        right: 10vw;
+        width: 45%;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .hero .image-hero img{
+        max-height: none;
+        max-width: 100%;
+
+    }
+
 }
 
 
@@ -214,4 +304,17 @@ body{
     height: 100vh;
     justify-content: center;
 
+}
+
+.cronograma-list{
+
+}
+
+.cronograma-list li{
+    display: flex;
+    margin-bottom: 24px;
+}
+.cronograma-list li  span{
+    font-family: var(--font-title);
+    margin-right: 24px;
 }
