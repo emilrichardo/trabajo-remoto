@@ -38,12 +38,31 @@ html,body{
     .row .container{
         padding: 0 14px;
     }
-    .col-main {
+    .row .col-main {
         width: calc(100vw - 500px);
         max-width: 800px;
     }
-    .col-main + section{
+    .row .col-main + section{
         max-width: 400px;
+    }
+
+    .row2 .container{
+        padding: 0 5vw;
+    }
+
+    .row2{
+        display: flex;
+
+        justify-content: space-between;
+    }
+    .row2 .col-main{
+        order: 1;
+        width: calc(100vw - 500px);
+        display: flex;
+    }
+    .row2 .col-two{
+        order: 2;
+        width: 500px;
     }
 }
 
@@ -244,6 +263,14 @@ html,body{
     color: var(--light-color);
 }
 
+@media (min-width:1024px) {
+    .boton-lg{
+        font-size: var(--size-6);
+    }
+
+
+
+}
 
 
 
@@ -432,6 +459,7 @@ body{
     flex-direction: column;
     height: 100vh;
     justify-content: center;
+    max-width: 500px;
 
 }
 
