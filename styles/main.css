@@ -22,6 +22,9 @@ html,body{
 
 
 @media (min-width:1024px) {
+    .container{
+        padding: 0 7vw;
+    }
     .row{
         display: flex;
         justify-content: center;
@@ -39,6 +42,13 @@ html,body{
 /*utilidades*/
 .hidden{
     display: none;
+}
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
 }
 
 
@@ -223,6 +233,40 @@ html,body{
 body{
     font-family: var(--font-body);
 
+}
+
+
+/*navbar*/
+.navbar{
+    display: none;
+    justify-content: flex-end;
+    padding: 5vh 5vw;
+    position: relative;
+    width: 100vw;
+    top: 0;
+
+}
+
+.navbar a{
+    display: inline-block;
+    color: var(--dark-color);
+    font-size: var(--size-2);
+    letter-spacing: 2px;
+    margin-left: 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--font-title);
+}
+
+.navbar a:hover{
+    color: var(--primary-color);
+    text-shadow: 1px 1px 1px #000000;
+}
+
+@media (min-width:1024px) {
+    .navbar{
+        display: flex;
+    }
 }
 
 /*hero*/
