@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="./fonts/satoshi/css/satoshi.css">
 </head>
 <body>
-    <nav class="navbar">
-        <a href="#">¿Dónde y cuando?</a>
-        <a href="#">Inscribite</a>
-        <a href="#">Cronograma</a>
-    </nav>
-    <section class="hero" id="hero">
+
+    <section class="hero h-100" id="hero">
+        <nav class="navbar">
+            <a href="#fecha">¿Dónde y cuando?</a>
+            <a href="#inscripciones">Inscribite</a>
+            <a href="#cronograma">Cronograma</a>
+        </nav>
         <div class="container">
             <div class="title mt-60">
                 <h1 class="font-title size-5 lg-size-7"> <span class="antetitulo">Hablemos de</span>  <span class="hidden">Trabajo Remoto</span></h1>
@@ -31,21 +32,45 @@
         <div class="image-hero" >
             <img src="./images/hero.svg"/>
         </div>
+        <div class="hero-footer">
+            <a class="mt-20" href="#fecha"><img  src="./images/icons/arrow-down.svg"  /></a>
+
+
+            <div class="counter">
+                <div class="counter-container">
+                    <span class="label">Faltan</span>
+                    <span>17 <small>Días</small></span>
+                    <span>-</span>
+                    <span>4 <small>Horas</small></span>
+                    <span>-</span>
+                    <span>25 <small>Minutos</small></span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <div class="row h-100">
-        <section class="h-100 col-main" id="fecha">
+        <section class="h-100 relative col-main" id="fecha">
             <div class="container">
-                <img class="mx-100 mt-60" src="./images/section-02.svg"/>
+                <img class="img-date mx-100 mt-60" src="./images/section-02.svg"/>
+                <div class="logo-h">
+                    <div class="title mt-60">
+                        <h1 class="font-title size-3  "> <span class="antetitulo">Hablemos de</span>  <span class="hidden">Trabajo Remoto</span></h1>
+                        <div class="mt-20 flex ">
+                            <img src="./images/trabajo.svg" />
+                            <img src="./images/remoto.svg" />
+                        </div>
+                    </div>
+                </div>
                 <h2 class="size-6 mt-20"> <span class="font-title">Sábado 25 de junio</span> <br/> de 17 a 19hs</h2>
 
-                <p class="mt-20">GoCoworkin <br/>
+                <p class="mt-20 lg-size-5">GoCoworkin <br/>
                     Brandsen 139 Dpto C<br/>
                     Satiago del Estero
                  </p>
 
                     <a target="_blank" href="https://www.google.com/maps/dir//go+coworking/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x943b536de105a701:0x417341151382829a?sa=X&ved=2ahUKEwiFy5f5xp74AhUiuJUCHec0B0IQ9Rd6BAguEAQ" class="text-primary" >Ver ubicación</a>
-                    <p class="mt-80 font-title size-3">Destinado a desarrolladores, informáticos, diseñadores y afines.</p>
+                    <p class="dest mt-80 font-title size-3 lg-size-4">Destinado a desarrolladores, informáticos, diseñadores y afines.</p>
             </div>
         </section>
         <section class="h-100 " id="objetivos">
